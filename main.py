@@ -90,6 +90,9 @@ if __name__ == "__main__":
     for current_user in folders:
         setup_folder(os.path.join(users_folder, current_user))
 
+        os.makedirs(os.path.join(users_folder, current_user, "out"), exist_ok=True)
+        os.makedirs(os.path.join(users_folder, current_user, "in"), exist_ok=True)
+        
         # exists any file in the folder? ./users/user_name/in/
         if os.path.exists(os.path.join(users_folder, current_user, "in")):
             for file in os.listdir(os.path.join(users_folder, current_user, "in")):
