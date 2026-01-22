@@ -158,5 +158,5 @@ export class InstagramManager {
 
 if (require.main === module) {
     const manager = new InstagramManager();
-    manager.process(["bernardo_farrobinha"]).catch(console.error);
+    manager.process(["YOUR-USER-HERE"]).catch(console.error);
 }

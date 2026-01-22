@@ -112,6 +112,9 @@ export class InstagramBot {
     }
 }
 
-const bot = new InstagramBot();
-
-bot.main(["bernardo_farrobinha"]);
+if (require.main === module) {
+    (async () => {
+        const bot = new InstagramBot();
+        await bot.main(["YOUR-USER-HERE"]);
+    })();
+}
