@@ -1,0 +1,23 @@
+{
+  "name": "followers-assistant-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node src/app.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.28.1",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "puppeteer": "^24.36.0",
+    "puppeteer-core": "^24.36.0",
+    "ts-node": "^10.9.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
